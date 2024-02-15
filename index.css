@@ -1,0 +1,295 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+:root{
+    --color-lgred:#FF3131;
+    --color-shade:#626262;
+    --color-black:#000;   
+}
+body{
+    font-family:'Roboto', 'Helvetica','Lato', 'Open Sans',' sans-serif';
+    line-height: 1.7;
+    background-color: #000;
+  
+}
+.contact{
+    display: flex;
+    color: white;
+    position: absolute;
+    right: 0;
+    
+}
+
+#digi1,#digi2,#digi3{
+    margin-left: 18px;
+    margin-right: 20px;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 45px;
+    margin-top: 35px;
+    background-color: var(--color-lgred);
+    position: absolute;
+}
+ img{
+    position: absolute;
+    right: 15px;
+    width:100%;
+    object-fit: cover;
+    overflow: hidden;
+
+
+}
+#login{
+    position: absolute;
+    right: 18px;
+    top: 17px;
+    font-size: 10px;
+
+}
+.logo{
+    width: 160px;
+    height: 63px;
+    position: absolute;
+    bottom: 72px;
+}
+.gym_name{
+    position: absolute;
+    font-size: 28px;
+    margin: 9px 0px 0px 45px ;
+    color: aliceblue;
+    
+    
+ }
+ .navlist{
+    display: flex;
+    position: absolute;
+    margin: 9px 0px 0px 500px;
+
+}
+.navlink{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 30px;
+   
+ }
+ 
+#homr img{
+    width:100%;
+    height: 520px;
+    object-fit: cover;
+    margin-top: 82px;
+     position: relative;
+
+}
+#para1,
+#para2,
+#para3 {
+    position: absolute;
+    color: white; /* Ensuring text is visible */
+}
+
+#para1 {
+   bottom: 310px;
+   left: 210px;
+   /* font-size: larger; */
+   font-weight: 700;
+}
+
+#para2 {
+    bottom: 230px;
+    left: 83px;
+    font-size: 50px;
+    font-weight: 900;
+   
+}
+
+#para3 {
+    bottom: 180px;
+    left: 124px;
+   
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#para1,
+#para2,
+#para3 {
+    opacity: 0;
+    animation: fadeInUp 1s forwards ease-out;
+}
+
+/* Adjust the delay for each element */
+#para1 {
+    animation-delay: 0.5s;
+}
+
+#para2 {
+    animation-delay: 1s;
+}
+
+#para3 {
+    animation-delay: 1.5s;
+}
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: var(--color-lgred);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2000px;
+    color: azure;
+} 
+.footerbar{
+    margin-top: 50px;
+
+}
+#addrres_footer,#nav_footer,#privacy,#con{
+    position: relative;
+    margin-top: 12px;
+    
+}
+.navlin{
+    text-decoration:none ;
+    color: aliceblue;
+   
+}
+#soical_media a{
+    margin-left: 15px;
+}
+
+#boost{
+    width: 290px;
+    height: 55px;
+    background-color: var(--color-lgred);
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 480;
+}
+.SSE{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+   
+    /* grid-template-columns: repeat(3,1fr); */
+}
+.SS img{
+    position: relative;
+    width: 280px;
+    height: 350px;
+    /* border-radius: 10px; */
+   border-color: 2px aliceblue;
+   
+}
+.SSEbtn{
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+.btnSSE{
+    width: 284px;
+    height: 40px;
+    background-color: var(--color-lgred);
+    color: white;
+    margin:0px 16px 87px 0px;
+    text-align: center;
+    object-fit: cover;
+    font-size: 20px;
+ 
+}
+
+@keyframes slout {
+    
+0%{ 
+    transform:translate(-100px);
+}
+
+
+}
+.SS img{
+    animation: slout 0.9s ease-in-out forwards;
+}
+ @keyframes slideIn {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 1;
+    }
+  }
+  
+  #boost {
+  
+    animation: slideIn 0.9s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .SSEbtn {    
+
+    animation: fadeIn 1s ease-in-out forwards;
+  } 
+   
+
+
+  
+.off_fac{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+.offer{
+    display: flex;
+
+}
+ .facilities{
+    position: absolute;
+    width: 55%;
+    height: 500px;
+    background-color: var(--color-shade);
+}
+.pic img{
+    width: 43%;
+    height: 500px;
+    
+} 
+.row1{
+    display: flex;
+    margin-top: 40px;
+}
+.rowfirst img{
+    position: relative;
+    width: 75px;
+    height: 80px;
+   margin-left: 70px;
+}
+.rowpara1 p{
+    /* position: absolute; */
+   margin-left: 39px;
+   
+}
